@@ -1,3 +1,8 @@
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
+
+
 interface Teacher {
     readonly firstName: string;
     readonly lastName: string;
@@ -9,18 +14,13 @@ interface Teacher {
 }
 
 
-interface Directors extends Teacher {
-  numberOfReports: number;
-}
-
-
-const teacher3: Teacher = {
-  firstName: 'John',
-  fullTimeEmployee: false,
-  lastName: 'Doe',
-  location: 'London',
-  contract: false,
-};
+// const teacher3: Teacher = {
+//   firstName: 'John',
+//   fullTimeEmployee: false,
+//   lastName: 'Doe',
+//   location: 'London',
+//   contract: false,
+// };
 
 
 interface Directors extends Teacher {
@@ -36,4 +36,4 @@ const director1: Directors = {
 };
 
 console.log(director1);
-console.log(teacher3);
+// console.log(teacher3);
