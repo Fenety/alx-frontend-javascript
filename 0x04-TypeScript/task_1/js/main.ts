@@ -19,11 +19,11 @@ interface printTeacherFunction {
 
 // Function implementation
 const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
-  return `${firstName.charAt(0)}. ${lastName}`;
+  return `${firstName.charAt(0)}${lastName}`;
 };
 
 // Example usage
-console.log(printTeacher("John", "Doe")); // Output: J. Doe
+console.log(printTeacher("John", "Doe"));
 
 
 // // Example usage
