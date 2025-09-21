@@ -8,6 +8,12 @@ interface Teacher {
     [key: string]: any;
 }
 
+
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
+
+
 const teacher3: Teacher = {
   firstName: 'John',
   fullTimeEmployee: false,
